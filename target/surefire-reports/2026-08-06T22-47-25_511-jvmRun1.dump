@@ -1,0 +1,111 @@
+# Created at 2026-08-06T22:47:27.282
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (24996@MaheshwariReddy):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at app//org.testng.internal.NoOpTestClass.<init>(NoOpTestClass.java:21)
+        at app//org.testng.TestClass.<init>(TestClass.java:80)
+        at app//org.testng.TestRunner.initMethods(TestRunner.java:475)
+        at app//org.testng.TestRunner.init(TestRunner.java:349)
+        at app//org.testng.TestRunner.init(TestRunner.java:304)
+        at app//org.testng.TestRunner.<init>(TestRunner.java:178)
+        at app//org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:636)
+        at app//org.testng.SuiteRunner.<init>(SuiteRunner.java:197)
+        at app//org.testng.TestNG.createSuiteRunner(TestNG.java:1365)
+        at app//org.testng.TestNG.createSuiteRunners(TestNG.java:1339)
+        at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1199)
+        at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+        at app//org.testng.TestNG.run(TestNG.java:1079)
+        at app//org.junit.support.testng.engine.TestNGTestEngine.configureAndRun(TestNGTestEngine.java:202)
+        at app//org.junit.support.testng.engine.TestNGTestEngine.lambda$discover$1(TestNGTestEngine.java:101)
+        at app//org.junit.support.testng.engine.TestNGTestEngine$$Lambda/0x000001c8aa087608.run(Unknown Source)
+        at app//org.junit.support.testng.engine.TestNGTestEngine.withTemporarySystemProperty(TestNGTestEngine.java:210)
+        at app//org.junit.support.testng.engine.TestNGTestEngine.discover(TestNGTestEngine.java:100)
+        at app//org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discoverEngineRoot(EngineDiscoveryOrchestrator.java:195)
+        at app//org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discoverSafely(EngineDiscoveryOrchestrator.java:174)
+        at app//org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discover(EngineDiscoveryOrchestrator.java:119)
+        at app//org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discover(EngineDiscoveryOrchestrator.java:84)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.discover(DefaultLauncher.java:104)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.discover(DefaultLauncher.java:83)
+        at app//org.junit.platform.launcher.core.DelegatingLauncher.discover(DelegatingLauncher.java:42)
+        at app//org.junit.platform.launcher.core.InterceptingLauncher.lambda$discover$0(InterceptingLauncher.java:33)
+        at app//org.junit.platform.launcher.core.InterceptingLauncher$$Lambda/0x000001c8aa0304a8.proceed(Unknown Source)
+        at app//org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+        at app//org.junit.platform.launcher.core.InterceptingLauncher.discover(InterceptingLauncher.java:33)
+        at app//org.junit.platform.launcher.core.DelegatingLauncher.discover(DelegatingLauncher.java:42)
+        at app//org.apache.maven.surefire.junitplatform.LauncherAdapter.discover(LauncherAdapter.java:47)
+        at app//org.apache.maven.surefire.junitplatform.TestPlanScannerFilter.accept(TestPlanScannerFilter.java:51)
+        at app//org.apache.maven.surefire.api.util.DefaultScanResult.applyFilter(DefaultScanResult.java:87)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.scanClasspath(JUnitPlatformProvider.java:233)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:213)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:384)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:174)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:501)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:489)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@21.0.9/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@21.0.9/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+        at java.base@21.0.9/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@21.0.9/java.lang.Object.wait0(Native Method)
+        at java.base@21.0.9/java.lang.Object.wait(Object.java:366)
+        at java.base@21.0.9/java.lang.Object.wait(Object.java:339)
+        at java.base@21.0.9/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+        at java.base@21.0.9/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+        at java.base@21.0.9/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+        at java.base@21.0.9/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@21.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@21.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@21.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+        at java.base@21.0.9/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+        at java.base@21.0.9/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+        at java.base@21.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+        at java.base@21.0.9/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@21.0.9/java.lang.Thread.runWith(Thread.java:1596)
+        at java.base@21.0.9/java.lang.Thread.run(Thread.java:1583)
+        at java.base@21.0.9/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@21.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@21.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@21.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+        at java.base@21.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@21.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@21.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        at java.base@21.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@21.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@21.0.9/java.lang.Thread.runWith(Thread.java:1596)
+        at java.base@21.0.9/java.lang.Thread.run(Thread.java:1583)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@21.0.9/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@21.0.9/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:187)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:573)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$500(ForkedBooter.java:81)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$2.update(ForkedBooter.java:319)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:367)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:330)
+        at java.base@21.0.9/java.lang.Thread.runWith(Thread.java:1596)
+        at java.base@21.0.9/java.lang.Thread.run(Thread.java:1583)
+
+
+

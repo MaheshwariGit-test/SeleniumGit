@@ -1,0 +1,7 @@
+Application\PageObjects\CartPage.class
+Application\PageObjects\CheckOutPage.class
+Application\PageObjects\ConformationPage.class
+Application\PageObjects\OrderPage.class
+Application\AbstractComponents\AbstractComponent.class
+Application\PageObjects\ProductCatalog.class
+Application\PageObjects\LandingPage.class
