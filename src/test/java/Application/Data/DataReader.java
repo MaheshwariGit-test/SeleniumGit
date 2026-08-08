@@ -12,7 +12,7 @@ public class DataReader {
 
 	public static List<HashMap<String,String>> readJsonData(String filePath) throws Throwable {
 //		FileInputStream fis=new FileInputStream("C:\\Users\\anger\\eclipse-workspace\\FrameWork\\src\\test\\java\\Application\\Data\\PurchaseOrder.json");
-		
+		System.out.println("data Reader class");
 		//String to HashMap-->jackson-databind
 		String jsonContent=FileUtils.readFileToString(new File(filePath),StandardCharsets.UTF_8);
 		
