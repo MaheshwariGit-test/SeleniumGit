@@ -16,6 +16,10 @@ import Application.PageObjects.ProductCatalog;
 public class LetShopAppliactionTest extends BaseTest
 {
 	@Test
+	public void developBranch() {
+		System.out.println("making changes to develop branch");
+	}
+	@Test
 	public void errorValidation() throws IOException {
 		 
 	  landingPage.loginApplication("ishika@gmail.com","Dummy@12356");//calling from LandingPage Object
